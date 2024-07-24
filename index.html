@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de datos de vuelo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 text-white ">
+  <main class="container">
+      <h1 class="text-2xl my-4 grid justify-items-center">Consulta de Datos de Vuelo</h1>
+      
+      <label for="flightNumber" class="mx-2">Ingrese número de vuelo:</label>
+      <input type="text" id="flightNumber" placeholder="Ej. FD3210" class="border-2 border-rose-500">
+      <button onclick="fetchFlight()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-0.5 px-4 rounded inline-flex items-center">Buscar</button>
+      
+      <div  id="flightInfo">
+        <!-- Aquí se mostrará la información del vuelo -->
+      </div>
+  </main>
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
